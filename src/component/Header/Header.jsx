@@ -23,7 +23,13 @@ function Header() {
     link: "/",
     active: true,
   },
+
   {
+    name: "About Us",
+    link: "/about",
+    active: !authStatus,
+  },
+    {
     name: "Login",
     link: "/login",
     active: !authStatus,

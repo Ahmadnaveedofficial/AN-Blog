@@ -2,7 +2,7 @@ import cfg from "../cfg/cfg";
 import { Client, Account, ID } from "appwrite";
 
 export class AuthService {
-    client = new Client();
+    client=new Client();
     account;
     constructor() {
         this.client
@@ -10,11 +10,11 @@ export class AuthService {
             .setProject(cfg.appWriteProjectId);
         this.account = new Account(this.client);
     }
-    async createAccount({ email, password, name }) {
+    async createAccount({email,password,name }) {
         try {
-            const userAccount = await this.account.create(ID.unique(), email, password, name);
+            const userAccount = await this.account.create(ID.unique(),email,password,name);
             if (userAccount) {
-                return this.login({ email, password });
+                return this.login({email,password});
             } else {
                 return userAccount;
             }
@@ -22,7 +22,7 @@ export class AuthService {
             console.log("Appwrite service :: createAccount :: error ", error);
         }
     }
-    async login({ email, password }) {
+    async login({email,password}) {
         try {
             return await this.account.createEmailPasswordSession(email, password);
         } catch (error) {
