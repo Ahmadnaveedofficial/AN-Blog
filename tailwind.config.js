@@ -8,5 +8,10 @@ export default {
     extend: {},
   },
   plugins: [],
+  safelist: [
+  'pt-44',
+  'pt-40',
+]
+
 }
 

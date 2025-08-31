@@ -9,7 +9,7 @@ function Select({
 },ref) {
     const id = useId();
   return (
-    <div w-full>
+    <div className= "w-full">
         { lable && <lable htmlFor={id} className=''> </lable>}
         <select {...props}
         id={id}
@@ -19,7 +19,7 @@ function Select({
         >
             {options?.map((option)=>(
                    <option value={option} key={option}>
-                        
+                        {option}
                    </option>
             )) }
         </select>

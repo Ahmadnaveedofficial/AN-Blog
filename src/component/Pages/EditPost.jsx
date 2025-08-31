@@ -16,7 +16,7 @@ function EditPost() {
                 if(post){
                     setPost(post);
                 } else {
-                    navigate('/');
+                    navigate('/all-posts');
                 }
             })
         }
@@ -31,3 +31,5 @@ function EditPost() {
     :null;
 }
 export default EditPost
+
+

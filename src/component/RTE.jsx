@@ -18,7 +18,8 @@ export default function RTE({
                 control={control}
                 render={({ field: { onChange } }) => (
                     <Editor
-                        initialValue:defaultValue
+                        apiKey="r35c7vwp7rdevns7votzxnr15r35jq6h2lv9c473f52rzz0w"
+                        initialValue={defaultValue}
                         init={{
                             branding: false,
                             height: 500,
@@ -36,7 +37,7 @@ export default function RTE({
                                 "fullscreen",
                                 "help",
                                 "image",
-                                "imagetools",
+                                // "imagetools",
                                 "insertdatetime",
                                 "link",
                                 "lists",
@@ -44,12 +45,12 @@ export default function RTE({
                                 "nonbreaking",
                                 "pagebreak",
                                 "preview",
-                                "print",
+                                // "print",
                                 "quickbars",
                                 "save",
                                 "searchreplace",
                                 "table",
-                                "template",
+                                // "template",
                                 "visualblocks",
                                 "visualchars",
                                 "wordcount"

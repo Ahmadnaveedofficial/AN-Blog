@@ -15,12 +15,16 @@ function Allpost() {
         }
     })
     return (
-        <div className='w-full py-8'>
+        <div className='w-full py-8 pt-44'>
             <Container>
                 <div className='flex flex-wrap -mx-2'>
                     {posts.map((post) => (
                         <div key={post.$id} className='w-full md:w-1/2 lg:w-1/3 px-2 mb-4'>
-                            <PostCard post={post} />
+                            <PostCard
+                                $id={post.$id}
+                                title={post.title}
+                                featuredImage={post.featuredImage?.$id} 
+                                 />
                         </div>
                     ))}
                 </div>
@@ -30,3 +34,10 @@ function Allpost() {
 }
 
 export default Allpost
+
+
+
+
+
+
+

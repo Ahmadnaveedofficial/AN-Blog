@@ -89,6 +89,7 @@ import { Provider } from 'react-redux';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import store from './store/store.js';
 import App from './App.jsx';
+import './index.css';
 
 import { AuthLayout, Login, SignUp } from './component/index.js';
 import Home from './component/Pages/Home.jsx';
@@ -98,7 +99,6 @@ import AddPost from './component/Pages/AddPost.jsx';
 import Post from './component/Pages/Post.jsx';
 import AboutMe from './component/Pages/Aboutme.jsx';
 
-import './index.css';
 
 const router = createBrowserRouter([
   {
@@ -114,7 +114,8 @@ const router = createBrowserRouter([
             <Login />
           </AuthLayout>
         ),
-      },
+      }
+      ,
       {
         path: "/signup",
         element: (
