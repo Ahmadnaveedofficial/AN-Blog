@@ -18,7 +18,7 @@ function Logo({ width = "100px" }) {
   return (
     <div className="flex items-center">
       <img
-        src="an6.png"
+        src="an3.png"
         style={{ width }}
         className="h-auto object-contain hover:scale-105 transition-transform duration-200 cursor-pointer"
         alt="Logo"
