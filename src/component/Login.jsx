@@ -49,7 +49,7 @@ function Login() {
                     <div className="mb-8 flex justify-center">
                         <div className="rounded-2xl bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-cyan-500/20 backdrop-blur-xl border border-slate-700/30 p-4 group/logo hover:scale-110 transition-all duration-500 hover:shadow-lg hover:shadow-blue-500/25">
                             <img
-                                src="an6.png"
+                                src="an3.png"
                                 className="h-12 w-auto object-contain hover:scale-105 transition-transform duration-200 cursor-pointer"
                                 alt="Logo"
                             />
